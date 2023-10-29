@@ -535,6 +535,8 @@ public:
    virtual void EvalRevDiff(const Vector &V_bar, ElementTransformation &T,
                             const IntegrationPoint &ip,
                             DenseMatrix &PointMat_bar);
+   std::function<void(const Vector &, Vector &)> GetFunc()
+   {return Function;}
 
    virtual ~VectorFunctionCoefficient() { }
 };

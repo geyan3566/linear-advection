@@ -36,6 +36,7 @@ list(APPEND ALL_EXE_SRCS
   ex26.cpp
   ex27.cpp
   ex28.cpp
+  linear_advection.cpp
   )
 
 if (MFEM_USE_MPI)
